@@ -27,7 +27,7 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 PRODUCT_DEVICE := RM6785
 PRODUCT_NAME := twrp_RM6785
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := Realme 7/Narzo 20 Pro/Narzo 30
+PRODUCT_MODEL := Realme 6/6i(Indian)/6s/Narzo
 PRODUCT_MANUFACTURER := realme
 
 # Shipping API level
