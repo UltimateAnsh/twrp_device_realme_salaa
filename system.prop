@@ -19,9 +19,6 @@ persist.service.adb.enable=1
 persist.service.debuggable=1
 persist.sys.usb.config=mtp,adb
 persist.adb.nonblocking_ffs=0
-setprop persist.service.adb.enable 1
-setprop persist.service.debuggable 1
-setprop persist.sys.usb.config mtp,adb
 
 # Battery Property
 ro.charger.enable_suspend=1
