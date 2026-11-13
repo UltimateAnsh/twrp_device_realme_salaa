@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-LOCAL_PATH := device/realme/salaa
+LOCAL_PATH := device/realme/RM6785
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -24,10 +24,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-PRODUCT_DEVICE := salaa
-PRODUCT_NAME := twrp_salaa
+PRODUCT_DEVICE := RM6785
+PRODUCT_NAME := twrp_RM6785
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := Realme 7
+PRODUCT_MODEL := Realme 7/Narzo 20 Pro/Narzo 30
 PRODUCT_MANUFACTURER := realme
 
 # Shipping API level

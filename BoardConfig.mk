@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/realme/salaa
+DEVICE_PATH := device/realme/RM6785
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -57,7 +57,7 @@ BOARD_USES_MTK_HARDWARE := true
 MTK_HARDWARE := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := RMX2155,RMX2155L1,RMX2151,RMX2151L1,RMX2156L1,RMX2161L1,RMX2163L1,salaa
+TARGET_OTA_ASSERT_DEVICE := RMX2151,RMX2151L1,RMX2153,RMX2153L1,RMX2155,RMX2155L1,RMX2001,RMX2001L1,RMX2002,RMX2002L1,RMX2003,RMX2003L1,RM6785,nemo,salaa
 
 # Kernel - config
 BOARD_KERNEL_IMAGE_NAME := Image.gz
@@ -236,7 +236,7 @@ TW_SKIP_ADDITIONAL_FSTAB := true
 TW_THEME := portrait_hdpi
 
 # Version/Maintainer
-TW_DEVICE_VERSION := Realme-UI-v3.0-BY-ANSH-$(shell date +%Y%m%d)
+TW_DEVICE_VERSION := Realme-UI-v2.0-BY-ANSH-$(shell date +%Y%m%d)
 
 # Debug flags
 TWRP_INCLUDE_LOGCAT := true
