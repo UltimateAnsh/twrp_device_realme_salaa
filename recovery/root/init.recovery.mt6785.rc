@@ -1,4 +1,6 @@
 import /tee.rc
+import /init.recovery.usb.rc
+
 on init
     mkdir /mnt/vendor/persist
     mount ext4 /dev/block/by-name/persist /mnt/vendor/persist rw
@@ -93,17 +95,6 @@ on property:twrp.decrypt.done=true
     stop gatekeeper-1-0
     stop servicemanager
     stop hwservicemanager
-
-## For test
-on init
-    setprop sys.usb.configfs 1
-    setprop sys.usb.ffs.aio_compat 0
-
-on fs && property:ro.debuggable=0
-    # distinguish USB shoulde connect or not, i.e. CDP vs SDP
-    write /sys/class/udc/musb-hdrc/device/cmode 2
-    # set charging free due to it wait for USB activation
-    start adbd
 
 on post-fs
     # Support A/B feature for EMMC and UFS boot region
