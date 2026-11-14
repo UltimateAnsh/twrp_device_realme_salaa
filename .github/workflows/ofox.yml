@@ -27,7 +27,7 @@ on:
         description: 'DEVICE_TREE_BRANCH'
         type: choice
         options:
-                 - 'fox_12.1'
+                 - 'fox_12.1-r6'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
