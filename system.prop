@@ -17,11 +17,11 @@ ro.boot.dynamic_partitions=true
 persist.sys.isUsbOtgEnabled=true
 persist.service.adb.enable=1
 persist.service.debuggable=1
-persist.sys.usb.config=mtp,adb
+persist.sys.usb.config=adb
 persist.adb.nonblocking_ffs=0
-setprop persist.service.adb.enable 1
-setprop persist.service.debuggable 1
-setprop persist.sys.usb.config mtp,adb
+sys.usb.configfs=1
+sys.usb.controller=usb0
+vendor.usb.controller=usb0
 
 # Battery Property
 ro.charger.enable_suspend=1
